@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réserver une Table | Limova Café Nice (25 Avenue Jean Médecin)</title>
+  <meta name="description" content="Réservez votre table chez Limova Café à Nice. Dégustation de café, grand brunch du dimanche ou soirée nocturne du jeudi. Accueil privilégié par Reouven & Yoan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Notice -->
+  <div class="top-notice">
+    ☀️ 25 Avenue Jean Médecin, 06000 Nice • Réservez en ligne en quelques clics
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-symbol">☕</div>
+        <div class="logo-text">
+          LIMOVA CAFÉ
+          <span>Nice • Jean Médecin</span>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu Mobile">☰</button>
+
+      <nav id="navMenu">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="menu.html">La Carte</a></li>
+          <li><a href="equipe.html">Notre Équipe</a></li>
+          <li><a href="reservation.html" class="active">Réservation</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <a href="reservation.html" class="btn btn-gold">Réserver une table</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section style="background: var(--bg-secondary); padding: 60px 0; border-bottom: 1px solid var(--border); text-align: center;">
+    <div class="container">
+      <span class="section-tag">Votre Table à Nice</span>
+      <h1 class="section-title">Bloquer Votre Instant Gourmand</h1>
+      <p class="section-desc" style="margin: 0 auto;">Que ce soit pour un espresso entre deux rendez-vous, le généreux Brunch du Dimanche ou la Nocturne du Jeudi, nous vous réservons le meilleur accueil.</p>
+    </div>
+  </section>
+
+  <!-- Reservation Section -->
+  <section class="reservation-section">
+    <div class="container reservation-grid">
+      
+      <!-- Form Column -->
+      <div class="form-card">
+        <h2 style="font-size: 28px; margin-bottom: 8px;">Formulaire de Réservation</h2>
+        <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 28px;">Remplissez les informations ci-dessous, la confirmation est instantanée.</p>
+
+        <form id="reservationForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="resName">Nom & Prénom *</label>
+              <input type="text" id="resName" placeholder="Ex: Jean Dupont" required>
+            </div>
+            <div class="form-group">
+              <label for="resPhone">Téléphone Mobile *</label>
+              <input type="tel" id="resPhone" placeholder="06 12 34 56 78" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="resEmail">Adresse Email *</label>
+            <input type="email" id="resEmail" placeholder="votre.email@exemple.com" required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="resDate">Date Souhaitée *</label>
+              <input type="date" id="resDate" required>
+            </div>
+            <div class="form-group">
+              <label for="resTime">Heure d'arrivée *</label>
+              <input type="time" id="resTime" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="resGuests">Nombre de Couverts *</label>
+              <select id="resGuests" required>
+                <option value="1">1 personne (Comptoir ou table solo)</option>
+                <option value="2" selected>2 personnes</option>
+                <option value="3">3 personnes</option>
+                <option value="4">4 personnes</option>
+                <option value="5">5 personnes</option>
+                <option value="6">6 personnes</option>
+                <option value="7">7 personnes et plus (Groupe)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="resType">Moment / Formule *</label>
+              <select id="resType" required>
+                <option value="cafe" selected>☕ Pause Café & Douceurs</option>
+                <option value="brunch">🥞 Grand Brunch du Dimanche (29 €)</option>
+                <option value="nocturne">✨ Nocturne & Dégustations du Jeudi (24 €)</option>
+                <option value="pro">💼 Rendez-vous Professionnel / Coworking</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="resNotes">Demande Spécifique (Optionnel)</label>
+            <textarea id="resNotes" rows="3" placeholder="Préférence de table en terrasse/intérieur, anniversaire, intolérances alimentaires..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-gold" style="width: 100%; font-size: 16px; padding: 16px;">
+            Confirmer Ma Réservation
+          </button>
+        </form>
+
+        <div id="reservationFeedback" style="display: none; margin-top: 24px;"></div>
+      </div>
+
+      <!-- Info Column -->
+      <div>
+        <div class="info-box">
+          <h3>Informations Pratiques</h3>
+
+          <div class="info-item">
+            <div class="icon">📍</div>
+            <div>
+              <h4>Adresse</h4>
+              <p>25 Avenue Jean Médecin, 06000 Nice<br>En plein cœur de l'artère principale de Nice.</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon">🚋</div>
+            <div>
+              <h4>Accès & Transports</h4>
+              <p>Tramway Lignes 1 & 2 (Arrêt Jean Médecin à 50 mètres). Parking public Nice Étoile à proximité immédiate.</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon">🕒</div>
+            <div>
+              <h4>Horaires d'Ouverture</h4>
+              <p>
+                <strong>Lundi – Mercredi :</strong> 7h30 – 19h30<br>
+                <strong>Jeudi :</strong> 7h30 – 23h00 (Nocturne dès 19h)<br>
+                <strong>Vendredi – Samedi :</strong> 7h30 – 19h30<br>
+                <strong>Dimanche :</strong> 9h30 – 17h00 (Brunch 11h - 15h30)
+              </p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon">🤝</div>
+            <div>
+              <h4>Accueil Garanti</h4>
+              <p>Reouven Bokobza et Yoan Drahy seront ravis de vous accueillir personnellement dès votre arrivée.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: #FFFFFF; border-radius: var(--radius-lg); padding: 30px; border: 1px solid var(--border); box-shadow: var(--shadow-sm); margin-top: 24px; text-align: center;">
+          <h4 style="font-size: 18px; margin-bottom: 8px;">Une question immédiate ?</h4>
+          <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 16px;">Discutez en direct avec Yoni via la bulle de chat en bas à droite de votre écran !</p>
+          <button onclick="document.getElementById('chatBtn').click()" class="btn btn-outline" style="font-size: 13px; padding: 8px 18px;">
+            Ouvrir le Chat avec Yoni 💬
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Chatbot Yoni Widget -->
+  <div class="chatbot-widget">
+    <button class="chatbot-btn" id="chatBtn" title="Discuter avec Yoni">
+      💬
+      <span class="chatbot-badge"></span>
+    </button>
+
+    <div class="chat-panel" id="chatPanel">
+      <div class="chat-header">
+        <div class="chat-user-info">
+          <div class="chat-avatar">Y</div>
+          <div class="chat-user-details">
+            <h4>Yoni • Limova Café</h4>
+            <span class="chat-status">En ligne à Nice</span>
+          </div>
+        </div>
+        <button class="chat-close-btn" id="chatClose">✕</button>
+      </div>
+
+      <div class="chat-messages" id="chatMessages">
+        <div class="msg msg-bot">
+          Bonjour ! Besoin d'un conseil pour votre réservation au 25 avenue Jean Médecin ?
+          <div class="quick-actions">
+            <button class="quick-btn" onclick="handleQuickAction('brunch')">🥞 Réserver pour le Brunch du dimanche</button>
+            <button class="quick-btn" onclick="handleQuickAction('nocturne')">✨ Réserver pour le Jeudi Nocturne</button>
+            <button class="quick-btn" onclick="handleQuickAction('horaires')">📍 Horaires & Accès Tram</button>
+            <button class="quick-btn" onclick="handleQuickAction('equipe')">👥 Parler à Reouven ou Yoan</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-input-area">
+        <input type="text" class="chat-input" id="chatInput" placeholder="Posez une question à Yoni...">
+        <button class="chat-send-btn" id="chatSend">➤</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="logo-symbol">☕</div>
+            <div class="logo-text">
+              LIMOVA CAFÉ
+              <span>Nice • Jean Médecin</span>
+            </div>
+          </div>
+          <p>L'excellence du café de spécialité et la convivialité méditerranéenne au cœur de Nice.</p>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" class="social-link" title="Instagram">📸</a>
+            <a href="https://tiktok.com" target="_blank" class="social-link" title="TikTok">🎵</a>
+            <a href="https://linkedin.com" target="_blank" class="social-link" title="LinkedIn">💼</a>
+            <a href="https://maps.google.com" target="_blank" class="social-link" title="Google Maps">📍</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="menu.html">La Carte Gourmande</a></li>
+            <li><a href="equipe.html">Notre Équipe</a></li>
+            <li><a href="reservation.html">Réserver en Ligne</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Rendez-vous</h4>
+          <ul>
+            <li><a href="menu.html">Cafés du Monde</a></li>
+            <li><a href="reservation.html">Brunch du Dimanche</a></li>
+            <li><a href="reservation.html">Nocturne du Jeudi</a></li>
+            <li><a href="reservation.html">Privatisations</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Nous Rendre Visite</h4>
+          <p style="color: #FFFFFF; font-weight: 600; margin-bottom: 6px;">25 Avenue Jean Médecin<br>06000 Nice, France</p>
+          <p style="font-size: 13px; margin-top: 10px;">
+            Lun – Sam : 7h30 – 19h30<br>
+            Dimanche (Brunch) : 9h30 – 17h00<br>
+            Jeudi Nocturne : jusqu'à 23h00
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Limova Café Nice. Tous droits réservés.</div>
+        <div>Dirigé avec passion par Reouven Bokobza & Yoan Drahy</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
