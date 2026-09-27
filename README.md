@@ -34,10 +34,7 @@ En plein cœur de l'artère emblématique de Nice (Tramway Lignes 1 & 2 - Statio
 
 ---
 
-## 🚀 Activation de GitHub Pages (Hébergement Gratuit)
+## 🌐 Site en Ligne
 
-1. Rendez-vous sur les paramètres du dépôt : [Paramètres Pages](https://github.com/yoni806/limova-cafe-nice/settings/pages)
-2. Sous **Build and deployment** > **Source**, choisissez **Deploy from a branch**.
-3. Sélectionnez la branche **`main`** et le dossier **`/(root)`**, puis cliquez sur **Save**.
-4. Le site sera disponible sous 1 minute à l'adresse :  
-   👉 **`https://yoni806.github.io/limova-cafe-nice/`**
+Le site est accessible publiquement sur GitHub Pages :  
+👉 **`https://limovacafe.github.io/limova-cafe-nice/`**
