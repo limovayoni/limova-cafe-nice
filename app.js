@@ -48,10 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
         userText = 'Adresse et horaires';
         botReply = 'Nous sommes situés au <strong>25 avenue Jean Médecin à Nice</strong>. Ouvert du lundi au samedi de 7h30 à 19h30, et le dimanche pour le brunch de 9h30 à 17h00 !';
         break;
-      case 'equipe':
-        userText = 'Parler à Reouven ou Yoan';
-        botReply = 'Reouven Bokobza et Yoan Drahy sont au café toute la journée pour vous recevoir avec grand sourire. N’hésitez pas à venir discuter extraction ou torréfaction directement au comptoir !';
-        break;
       case 'brunch':
         userText = 'Infos sur le brunch du dimanche';
         botReply = 'Notre Grand Brunch a lieu chaque dimanche de 11h00 à 15h30 au tarif de 29 € (viennoiseries, pancakes maison, œufs bios au choix, avocado toast et cafés de spécialité à volonté) !';
@@ -96,16 +92,16 @@ document.addEventListener('DOMContentLoaded', () => {
         handleQuickAction('nocturne');
       } else if (lower.includes('carte') || lower.includes('café') || lower.includes('menu') || lower.includes('prix')) {
         handleQuickAction('carte');
+      } else if (lower.includes('douceur') || lower.includes('tarte') || lower.includes('gateau') || lower.includes('brownie')) {
+        handleQuickAction('douceurs');
       } else if (lower.includes('réserver') || lower.includes('reservation') || lower.includes('table')) {
         handleQuickAction('reserver');
       } else if (lower.includes('adresse') || lower.includes('où') || lower.includes('horaire') || lower.includes('ouvert') || lower.includes('nice')) {
         handleQuickAction('horaires');
-      } else if (lower.includes('reouven') || lower.includes('yoan') || lower.includes('équipe')) {
-        handleQuickAction('equipe');
       } else if (lower.includes('bonjour') || lower.includes('salut') || lower.includes('hello')) {
         addMessage('Bonjour ! C’est un plaisir de vous accueillir chez Limova Café. Que puis-je vous préparer aujourd’hui ?', 'bot');
       } else {
-        addMessage('Merci pour votre message ! Reouven, Yoan et toute notre équipe vous attendent avec grand plaisir au 25 avenue Jean Médecin. Vous pouvez réserver votre table en ligne via l’onglet <a href="reservation.html" style="color:#C6923B; font-weight:bold;">Réservation</a>.', 'bot');
+        addMessage('Merci pour votre message ! L’équipe du Limova Café vous attend avec grand plaisir au 25 avenue Jean Médecin. Vous pouvez réserver votre table en ligne via l’onglet <a href="reservation.html" style="color:#C6923B; font-weight:bold;">Réservation</a>.', 'bot');
       }
     }, 450);
   }
@@ -137,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div style="font-size: 36px; margin-bottom: 8px;">✨☕</div>
           <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; color: #1E4620; margin-bottom: 8px;">Réservation Confirmée !</h3>
           <p style="font-size: 15px; margin-bottom: 12px;">Merci <strong>${name}</strong>, votre table pour <strong>${guests} personne(s)</strong> est bien réservée le <strong>${date} à ${time}</strong> (${type}).</p>
-          <p style="font-size: 13px; color: #357A38;">Reouven Bokobza & Yoan Drahy vous attendent avec impatience au 25 avenue Jean Médecin à Nice.</p>
+          <p style="font-size: 13px; color: #357A38;">L’équipe du Limova Café vous attend avec impatience au 25 avenue Jean Médecin à Nice.</p>
         </div>
       `;
 
