@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Carte des Cafés & Douceurs | Limova Café Nice</title>
+  <meta name="description" content="Découvrez la carte de Limova Café à Nice : crus de café de spécialité du monde entier, tartes maison, brownies fondants chocolat, formule brunch et douceurs artisanales.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Notice -->
+  <div class="top-notice">
+    ☀️ 25 Avenue Jean Médecin, 06000 Nice • Cafés torréfiés artisanalement & Pâtisseries du jour
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-symbol">☕</div>
+        <div class="logo-text">
+          LIMOVA CAFÉ
+          <span>Nice • Jean Médecin</span>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu Mobile">☰</button>
+
+      <nav id="navMenu">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="menu.html" class="active">La Carte</a></li>
+          <li><a href="equipe.html">Notre Équipe</a></li>
+          <li><a href="reservation.html">Réservation</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <a href="reservation.html" class="btn btn-gold">Réserver une table</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section style="background: var(--bg-secondary); padding: 60px 0; border-bottom: 1px solid var(--border); text-align: center;">
+    <div class="container">
+      <span class="section-tag">Sélection Gourmande</span>
+      <h1 class="section-title">La Carte des Délices</h1>
+      <p class="section-desc" style="margin: 0 auto;">Chaque grain est sélectionné avec rigueur auprès des meilleurs terroirs mondiaux et nos pâtisseries sont confectionnées sur place chaque matin.</p>
+    </div>
+  </section>
+
+  <!-- Menu Content -->
+  <section class="menu-section">
+    <div class="container">
+
+      <!-- Category 1 : Cafés du Monde -->
+      <div class="menu-category-title">
+        <h2>🌍 Les Grands Crus du Monde</h2>
+        <span>Extractions V60, Chemex, Espresso ou Cold Brew</span>
+      </div>
+
+      <div class="items-grid">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=400&q=80" alt="Café Éthiopie Yirgacheffe">
+          </div>
+          <div class="menu-card-details">
+            <div class="menu-card-header">
+              <h3>Éthiopie Yirgacheffe G1</h3>
+              <span class="menu-price">4,80 €</span>
+            </div>
+            <p>Cultivé à plus de 2 000 m d'altitude. Profil floral éclatant, notes de jasmin, bergamote fraîche et pêche blanche.</p>
+            <div class="menu-badges">
+              <span class="badge-pill">Lavage traditionnel</span>
+              <span class="badge-pill">Filtre V60 recommandé</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80" alt="Café Colombie Huila Supremo">
+          </div>
+          <div class="menu-card-details">
+            <div class="menu-card-header">
+              <h3>Colombie Huila Supremo</h3>
+              <span class="menu-price">4,50 €</span>
+            </div>
+            <p>Corps rond et équilibré, belle longueur en bouche avec des arômes prononcés de chocolat noir, noisette et caramel beurre salé.</p>
+            <div class="menu-badges">
+              <span class="badge-pill">Espresso Signature</span>
+              <span class="badge-pill">Cacao & Caramel</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=400&q=80" alt="Café Panama Geisha">
+          </div>
+          <div class="menu-card-details">
+            <div class="menu-card-header">
+              <h3>Panama Boquete Geisha Réserve</h3>
+              <span class="menu-price">7,50 €</span>
+            </div>
+            <p>L'un des cafés les plus prestigieux au monde. Délicatesse soyeuse rappelant un thé d'exception, notes de fleur d'oranger et mangue mûre.</p>
+            <div class="menu-badges">
+              <span class="badge-pill">Micro-lot Réf. Rare</span>
+              <span class="badge-pill">Extraction Chemex</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=400&q=80" alt="Café Guatemala Antigua">
+          </div>
+          <div class="menu-card-details">
+            <div class="menu-card-header">
+              <h3>Guatemala Antigua Volcanique</h3>
+              <span class="menu-price">4,60 €</span>
+            </div>
+            <p>Nourri par les sols volcaniques riches d'Antigua. Notes d'amande grillée, pointe d'épices douces et compotée de pomme rouge.</p>
+            <div class="menu-badges">
+              <span class="badge-pill">Single Estate</span>
+              <span class="badge-pill">Parfait en Cappuccino</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 2 : Douceurs & Pâtisseries -->
+      <div class="menu-category-title">
+        <h2>🥧 Douceurs, Tartes & Pâtisseries Maison</h2>
+        <span>Préparées chaque matin au Limova Café avec des ingrédients nobles</span>
+      </div>
+
+      <div class="items-grid">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?auto=format&fit=crop&w=400&q=80" alt="Tarte aux pommes façon grand-mère">
+          </div>
+          <div class="menu-card-details">
+            <div class="menu-card-header">
+              <h3>Tarte Fine aux Pommes Caramélisées</h3>
+              <span class="menu-price">5,50 €</span>
+            </div>
+            <p>Pâte pur beurre croustillante, fines tranches de pommes du pays niçois fondantes et saupoudrées de sucre roux et vanille de Madagascar.</p>
+            <div class="menu-badges">
+              <span class="badge-pill">Recette Grand-Mère</span>
+              <span class="badge-pill">Incontournable</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=400&q=80" alt="Brownie Fondant Chocolat Valrhona">
+          </div>
+          <div class="menu-card-details">
+            <div class="menu-card-header">
+              <h3>Brownie Fondant Valrhona & Pécan</h3>
+              <span class="menu-price">5,00 €</span>
+            </div>
+            <p>Chocolat noir grand cru 70%, cœur ultra-fondant, éclats de noix de pécan torréfiées et une pincée de fleur de sel de Guérande.</p>
+            <div class="menu-badges">
+              <span class="badge-pill">Ultra Chocolaté</span>
+              <span class="badge-pill">Pécan croquante</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=400&q=80" alt="Tartelette Citron Meringuée">
+          </div>
+          <div class="menu-card-details">
+            <div class="menu-card-header">
+              <h3>Tartelette Citron Menton & Yuzu</h3>
+              <span class="menu-price">6,00 €</span>
+            </div>
+            <p>Crème onctueuse aux citrons de Menton et zeste de yuzu, couronnée d'une meringue italienne délicatement caramélisée au chalumeau.</p>
+            <div class="menu-badges">
+              <span class="badge-pill">Citrons Locaux</span>
+              <span class="badge-pill">Fraîcheur vive</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=400&q=80" alt="Cookie artisanal fleur de sel">
+          </div>
+          <div class="menu-card-details">
+            <div class="menu-card-header">
+              <h3>Cookie Artisanal Chocolat & Fleur de Sel</h3>
+              <span class="menu-price">3,80 €</span>
+            </div>
+            <p>Cuit tout au long de la journée pour rester croustillant à l'extérieur et moelleux à cœur. Pépites généreuses de chocolat au lait et noir.</p>
+            <div class="menu-badges">
+              <span class="badge-pill">Cuit minute</span>
+              <span class="badge-pill">Plaisir simple</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 3 : Formules Rendez-vous -->
+      <div class="menu-category-title">
+        <h2>✨ Formules Signatures & Rendez-Vous</h2>
+        <span>Pour les dimanches gourmands et les jeudis festifs</span>
+      </div>
+
+      <div class="items-grid">
+        <div class="menu-card" style="border-left: 4px solid var(--gold);">
+          <div class="menu-card-details">
+            <div class="menu-card-header">
+              <h3>Formule Grand Brunch du Dimanche</h3>
+              <span class="menu-price">29,00 €</span>
+            </div>
+            <p>Assiette salée au choix (œufs Bénédicte bio sur muffin maison ou Avocado toast saumon gravelax), pancakes maison sirop d'érable, granola bio, jus pressé minute et cafés de spécialité à volonté.</p>
+            <div class="menu-badges">
+              <span class="badge-pill">Dimanche 11h - 15h30</span>
+              <span class="badge-pill">Cafés à volonté</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" style="border-left: 4px solid var(--espresso);">
+          <div class="menu-card-details">
+            <div class="menu-card-header">
+              <h3>Dégustation Nocturne du Jeudi</h3>
+              <span class="menu-price">24,00 €</span>
+            </div>
+            <p>3 dégustations d'extractions rares commentées par Yoan & Reouven, accompagnées d'une planche apéritive salée/sucrée artisanale (fromages de pays, focaccia maison et mignardises).</p>
+            <div class="menu-badges">
+              <span class="badge-pill">Jeudi 19h - 23h</span>
+              <span class="badge-pill">Ambiance feutrée</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="reservation.html" class="btn btn-gold" style="font-size: 16px; padding: 16px 36px;">Réserver une table pour déguster</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Chatbot Yoni Widget -->
+  <div class="chatbot-widget">
+    <button class="chatbot-btn" id="chatBtn" title="Discuter avec Yoni">
+      💬
+      <span class="chatbot-badge"></span>
+    </button>
+
+    <div class="chat-panel" id="chatPanel">
+      <div class="chat-header">
+        <div class="chat-user-info">
+          <div class="chat-avatar">Y</div>
+          <div class="chat-user-details">
+            <h4>Yoni • Limova Café</h4>
+            <span class="chat-status">En ligne à Nice</span>
+          </div>
+        </div>
+        <button class="chat-close-btn" id="chatClose">✕</button>
+      </div>
+
+      <div class="chat-messages" id="chatMessages">
+        <div class="msg msg-bot">
+          Bonjour ! Besoin d'une recommandation parmi nos crus d'Éthiopie ou nos pâtisseries fraîches ?
+          <div class="quick-actions">
+            <button class="quick-btn" onclick="handleQuickAction('carte')">📖 Les cafés du monde</button>
+            <button class="quick-btn" onclick="handleQuickAction('douceurs')">🥧 Les douceurs du jour</button>
+            <button class="quick-btn" onclick="handleQuickAction('reserver')">📅 Réserver une table</button>
+            <button class="quick-btn" onclick="handleQuickAction('brunch')">🥞 Le brunch du dimanche</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-input-area">
+        <input type="text" class="chat-input" id="chatInput" placeholder="Posez une question à Yoni...">
+        <button class="chat-send-btn" id="chatSend">➤</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="logo-symbol">☕</div>
+            <div class="logo-text">
+              LIMOVA CAFÉ
+              <span>Nice • Jean Médecin</span>
+            </div>
+          </div>
+          <p>L'excellence du café de spécialité et la convivialité méditerranéenne au cœur de Nice.</p>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" class="social-link" title="Instagram">📸</a>
+            <a href="https://tiktok.com" target="_blank" class="social-link" title="TikTok">🎵</a>
+            <a href="https://linkedin.com" target="_blank" class="social-link" title="LinkedIn">💼</a>
+            <a href="https://maps.google.com" target="_blank" class="social-link" title="Google Maps">📍</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="menu.html">La Carte Gourmande</a></li>
+            <li><a href="equipe.html">Notre Équipe</a></li>
+            <li><a href="reservation.html">Réserver en Ligne</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Rendez-vous</h4>
+          <ul>
+            <li><a href="menu.html">Cafés du Monde</a></li>
+            <li><a href="reservation.html">Brunch du Dimanche</a></li>
+            <li><a href="reservation.html">Nocturne du Jeudi</a></li>
+            <li><a href="reservation.html">Privatisations</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Nous Rendre Visite</h4>
+          <p style="color: #FFFFFF; font-weight: 600; margin-bottom: 6px;">25 Avenue Jean Médecin<br>06000 Nice, France</p>
+          <p style="font-size: 13px; margin-top: 10px;">
+            Lun – Sam : 7h30 – 19h30<br>
+            Dimanche (Brunch) : 9h30 – 17h00<br>
+            Jeudi Nocturne : jusqu'à 23h00
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Limova Café Nice. Tous droits réservés.</div>
+        <div>Dirigé avec passion par Reouven Bokobza & Yoan Drahy</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
